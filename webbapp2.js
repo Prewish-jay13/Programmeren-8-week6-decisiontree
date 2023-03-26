@@ -35,12 +35,12 @@ function addEventListenerToSubmitButton() {
     console.log("predicted: " + prediction);
   
     let userInput = document.getElementById("userInput");
-    if (userInput !== null && prediction !== undefined && prediction == "1") {
+   if (userInput !== null && prediction !== undefined && prediction == "1") {
         //userInput.innerText = `The prediction is: ${prediction}`;
-        userInput.innerText = "you have diabetes, go to a doctor";
+        userInput.innerText = "Je hebt diabetes ga naar een dokter";
       }
       else if (userInput !== null && prediction !== undefined && prediction == "0") {
-        userInput.innerText = "you don't have diabetes, but I hope you stay healthy";
+        userInput.innerText = "Je bent gezond!";
       }
       
     let visual = new VegaTree("#view", 900, 500, decisionTree.toJSON());
